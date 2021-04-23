@@ -241,10 +241,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor
 
-# For config.fs
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # GPS
 LOC_HIDL_VERSION := 4.0
 
