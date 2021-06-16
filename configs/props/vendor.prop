@@ -1,5 +1,8 @@
 # Bluetooth
 bluetooth.device.default_name=Motorola One Fusion+
 
+# DPM
+persist.vendor.dpmhalservice.enable=1
+
 # GFX
 ro.config.avoid_gfx_accel=true
