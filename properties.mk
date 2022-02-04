@@ -163,15 +163,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.volume.metadata.method=dm-default-key \
     ro.crypto.volume.options=::v2
 
-# Dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat64.enabled=true \
-    dalvik.vm.heapmaxfree=8m \
-    dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapsize=512m \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heaptargetutilization=0.75
-
 # Disable Skia tracing by default
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.hwui.skia_atrace_enabled=false

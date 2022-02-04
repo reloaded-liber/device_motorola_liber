@@ -213,6 +213,9 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libhwbinder.vendor
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
