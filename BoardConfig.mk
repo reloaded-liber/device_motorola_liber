@@ -157,6 +157,9 @@ DEVICE_MANIFEST_FILE :=  \
     $(DEVICE_PATH)/configs/vintf/manifest.xml \
     hardware/qcom-caf/sm8150/media/conf_files/msmnile/c2_manifest.xml
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_liber
 TARGET_RECOVERY_DEVICE_MODULES := libinit_liber
