@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
     WifiResCommon_Sys
 
 PRODUCT_PACKAGES += \
+    CarrierConfig \
     FrameworksResLiber \
     SettingsProviderResLiber \
     SettingsResLiber \
