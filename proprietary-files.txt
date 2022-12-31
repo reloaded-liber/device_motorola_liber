@@ -1224,12 +1224,6 @@ vendor/lib64/libsensorslog.so|b5da5458778fc2ce4bc31cac77a705f9b650af91
 vendor/lib64/libssc_default_listener.so|d1ca27c768a8746fc92ff5d0ed61699015853d7c
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|9b21b6b1c1c38e9b5c53f44e5cf10fb84bb47acf
 
-# Servicetracker - from hanoip S2RI32.32-20-7
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service|46268253a28d60c28e7a8639accdbc49bc572f5f
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc|7cf06148da895586c20aab7e6bd01b806d8128b6
--vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml|40b6abd9b4be99dc5722eb60d71ee36764bf4ef3
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|1745bf39413e1e867131eadff7417620c6daeb1c
-
 # Snapdragon Computer Vision Engine - from hanoip S2RI32.32-20-7
 vendor/lib/libfastcvdsp_stub.so|7f27cee24281bc9bf4f08c6100cc66bd650d8efb
 -vendor/lib/libfastcvopt.so|2d95075abd87d86a1b2003294504fabbfe3d294c
