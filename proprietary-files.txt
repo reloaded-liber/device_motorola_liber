@@ -765,43 +765,7 @@ vendor/lib64/libpopup.so
 vendor/lib64/motorola.hardware.popup@1.0.so
 
 # Perf - from hanoip S2RI32.32-20-7
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|f03cd31f03b08e2c07e976399406cc98befd79a7
 vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
-vendor/lib/libperfconfig.so|032d646757153d2da70332843f6ffd0d3c0c1b16
-vendor/lib/libperfgluelayer.so|86f72d9980f7f5458dbe6f18a47c52e3d5a1cd91
-vendor/lib/libperfioctl.so|792c14e64aa6f83832127238f648394da51e27ce
-vendor/lib/libqti-perfd-client.so|c96de06bca2785983c4642764be13ed9810b7a78
-vendor/lib/libqti-perfd.so|b7ea44cdab92ed8d41f5cb1d09a6878a0c97740c
-vendor/lib/libqti-util.so|9a071a7fe1eab09cdef14b3bb44d9e178175ee9f
-vendor/lib/vendor.qti.memory.pasrmanager@1.0.so|c5cb17f183de38d2b1448754090dab6a47b567cd
-vendor/lib/vendor.qti.memory.pasrmanager@1.1.so|8b409d7d9223f38ac9ed507aa9ad68f1f23a88cc
-vendor/lib64/libperfconfig.so|a8a8f8c966e7a92cff1439eeaa103b128eafb5d3
-vendor/lib64/libperfgluelayer.so|00fbc6c9a8f817279dbd3836b1b63aadbed03d15
-vendor/lib64/libperfioctl.so|247ccf6c8e4477d4f464cac7bed05f6e5262c948
-vendor/lib64/libqti-perfd-client.so|cd4503fba00ed1f9bd0594aaeeabad0e9cc69b79
-vendor/lib64/libqti-perfd.so|3d550ac8a6d35b98b4388424feff9132a316bd35
-vendor/lib64/libqti-util.so|559252e14782c0849603decb6462a3e4410b713c
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|7e332989976f3549fcdb6c7b990fef3844dd36ae
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|4254d087742dd950f0f524106e6262d1e15dda60
-
-# Perf (learningmodule) - from hanoip S2RI32.32-20-7
-vendor/etc/lm/AdaptLaunchFeature.xml|d864a3d5add9408b808ca2ae3dc28279d6481d27
-vendor/etc/lm/AppClassifierFeature.xml|80bcbf8fc50ed706e8549432140323dbb9e8ae4c
-vendor/etc/lm/GameOptimizationFeature.xml|5267dbb620e40e3972eaa72a2aa21685b3bc71a2
-vendor/lib64/libadaptlaunch.so|aa1da37d4ac954e273c310250fa634c7e1ae510f
-vendor/lib64/libappclassifier.so|0a3f393ceb33ca37a3ee7c608997807589f88418
-vendor/lib64/libgameoptfeature.so|90f27f9a822b493abbea642b0b062f1a874cd6f1
-vendor/lib64/liblearningmodule.so|3e5e0c1a84149d86e08ba65b88a4d048c2223865
-vendor/lib64/libmeters-ns.so|08ede734456721d2b450cb46f17237d9a9b6cf79
-vendor/lib64/libmeters.so|50f9874933f73be22dc871a29160645780116296
-
-# Perf (io-prefetch) - from hanoip S2RI32.32-20-7
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|98834efcbf84743c3150d06cea9ba2267bad3afe
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib64/libqti-iopd-client.so|50c6699c623f348b8dd0bc11b894f5372cc93a6a
-vendor/lib64/libqti-iopd.so|895fed27eb7304b33dd0f84002e8702ad788407b
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|1c295b7f483244df5d3259b8361aa83242d3d82f
 
 # Peripheral manager - from hanoip S2RI32.32-20-7
 vendor/bin/pm-proxy|0704192692efb4b79e8cb1a2252625ad24468805
