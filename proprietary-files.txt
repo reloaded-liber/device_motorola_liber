@@ -75,16 +75,6 @@ vendor/lib64/libaudioalsa.so|686766d57db36b00710973872e40f614bb2fe11f
 vendor/lib64/libaudioconfigstore.so|f75502456cea4dbfc1cd2e0612e886ec861e2a2e
 vendor/lib64/libaudioparsers.so|32d74478058626cd6fff16b72b51bc481fa5e1aa
 
-# Audio - Prebuilt
-vendor/lib/hw/audio.primary.sm6150.so
-vendor/lib/vndk/libtinyalsa.so
-vendor/lib/libmotaudioutils.so
-vendor/lib/libtinycompress_vendor.so
-
-# Audio - Soundfx
-vendor/lib/soundfx/libmmieffectswrapper.so
-vendor/lib/soundfx/libspeakerbundle.so
-
 # Audio - Speaker Protection
 vendor/firmware/cs35l41-dsp1-spk-cali-hs.bin
 vendor/firmware/cs35l41-dsp1-spk-cali.bin
