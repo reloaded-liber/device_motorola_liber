@@ -117,20 +117,20 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     audio.primary.default \
-    audio.primary.sm6150 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
     libaudioroute \
+    libgui_vendor \
     libhdmiedid \
     libhfp \
-    libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndmonitor \
     libvolumelistener \
     tinymix \
-    libtinycompress
+    libtinycompress \
+    libtinycompress.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
