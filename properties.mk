@@ -180,15 +180,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.vulkan=adreno \
     ro.hardware.egl=adreno \
-    vendor.display.disable_scaler=0 \
-    vendor.display.disable_excl_rect=0 \
     vendor.display.disable_excl_rect_partial_fb=1 \
-    vendor.display.comp_mask=0 \
     vendor.display.enable_posted_start_dyn=1 \
-    vendor.display.enable_optimize_refresh=1 \
     vendor.display.use_smooth_motion=1 \
     vendor.display.disable_offline_rotator=1 \
-    vendor.display.disable_hw_recovery_dump=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -204,9 +199,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=0 \
-    debug.mdpcomp.logs=0 \
-    debug.sf.hw=0 \
     debug.sf.auto_latch_unsignaled=false \
     persist.demo.hdmirotationlock=false \
     persist.sys.sf.color_saturation=1.0 \
@@ -214,9 +206,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.force_brightness_capability=1 \
     debug.sf.enable_gl_backpressure=1 \
     ro.opengles.version=196610 \
-    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30 \
-    vendor.display.enable_default_color_mode=1 \
-    vendor.gralloc.disable_ubwc=0
+    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=0
