@@ -346,30 +346,17 @@ vendor/etc/init/hw/init.mmi.charge_only.rc|6140ab99d46829252b7e17c25f01da135d246
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
 vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
 
-# Display - from hanoip S2RI32.32-20-7
--system_ext/lib/libsdm-disp-apis.qti.so|f47638dc638ed33134259143b2b82640ce528d6e
--system_ext/lib64/libsdm-disp-apis.qti.so|4cb0796ab9e03e0edf06283595ebfa97261fce1d
-vendor/bin/qdcmss|a1bb68e4508feac29c821eb791cae8b1db235e28
-vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
-vendor/lib/libdisplayqos.so|1c01c72ca8e3ce28d3b0fb716e4d7ed21af44875
-vendor/lib/libhdcp1prov.so|218ceb9d2809a670cc6d4284b71fcc7f5a3c5903
-vendor/lib/libhdcp2p2prov.so|75ec44aa9699b74a82c0bd04cb1b791193e67ea8
-vendor/lib/libsdedrm.so|9875a6f816ad9216e0a796ddb2a66f82b7934f9b
-vendor/lib/libsdm-colormgr-algo.so|a9c21dcbe653f06729cc8d6768dcf4ddd4817aa0
--vendor/lib/libsdm-disp-vndapis.so|338b71976191303345a4b7a757dcc2c97b6a9d33
-vendor/lib/libsdmextension.so|2459b61177e966b1e3ed5dcc0da591a40954a01e
-vendor/lib/unnhal-acc-hta.so|e14ae2e4eb144fdd979f1f8d47ec5cfc9834da13
+# Display - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
 vendor/lib64/libdisplayqos.so|5548732c916e629f18f45ce257ce843b679a136a
-vendor/lib64/libhdcp1prov.so|395c39ef92c9145efe908cf7f8ed49c307b7708a
-vendor/lib64/libhdcp2p2prov.so|5d9dfc79157b996708a55268117f1a50d6b71551
-vendor/lib64/libsdedrm.so|f5a761bcb5879aa70d1690597c1d0108e3489986
+vendor/lib64/libhdr_tm.so|a222a7d838735c5ce73f06d4096fea3ca19611c8
+vendor/lib64/libqseed3.so|7f2a659fb9acd84d79c11dbd6901b816d5d1214f
+vendor/lib64/libsdedrm.so|351f4f9a64566097bd19601f18951ac8131a92b5
+vendor/lib64/libsdm-color.so|d24904d36d2cd5912755af5ac7e2fede47cd3eac
 vendor/lib64/libsdm-colormgr-algo.so|15f696a4575868e528360896f1e0098d531899c0
--vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
+vendor/lib64/libsdm-diag.so|341907510d377127adb98d07e7d9f30448d08def
+vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
 vendor/lib64/libsdmextension.so|76ef1430f700480509b5f991e031447fea9ddb01
-vendor/lib64/unnhal-acc-adreno.so|461821fa5e040623a4da8ce9c06345570057b0cc
-vendor/lib64/unnhal-acc-common.so|e37d2113f99506f1de85902a0fdee0b443342942
-vendor/lib64/unnhal-acc-hta.so|6cb1ca10aa1c82e59641d545d9f1ac7f00df8621
-vendor/lib64/unnhal-acc-hvx.so|3f61cfe064965ea1a5fc288b133da1802d36b608
+vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Display (Calibration Data)
 vendor/etc/qdcm_calib_data_mipi_mot_vid_focal_1080p_653.xml
@@ -377,23 +364,6 @@ vendor/etc/qdcm_calib_data_mipi_mot_vid_nova_1080p_653.xml
 
 # Display (HDR)
 vendor/etc/hdr_tm_config.xml
-
-# Display (Postprocessing) - from hanoip S2RI32.32-20-7
-system_ext/lib64/vendor.display.color@1.0.so|f22692f695ecaba49a0d82e56edb6f30c6c6f5a0
-system_ext/lib64/vendor.display.color@1.1.so|079129ae008c6a4d4e9beb0a2515b19fea9c5ad2
-system_ext/lib64/vendor.display.color@1.2.so|4aa6abeb5d21477c0c295a593fc6bb5f845491e8
-system_ext/lib64/vendor.display.color@1.3.so|6fb438b984ae23856d8097419b4de675c0b96cd7
-vendor/bin/hw/vendor.display.color@1.0-service|91e9e25ec4d64c4a7d5261899ca2cdb9cf29b695
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|44993853ff9d4340e856e6f53d802f10372442d3
-vendor/lib64/libmm-hdcpmgr.so|83c232564e9c828b67492207a75ef85866839040
-vendor/lib64/vendor.display.color@1.0.so|f80b69b96c3ff6a1eb865740de95f67c67be785a
-vendor/lib64/vendor.display.color@1.1.so|61e072efa368bf2795d1c8b0e9962471d60905de
-vendor/lib64/vendor.display.color@1.2.so|ca979992335c75885e341e51b939afd856f5b64f
-vendor/lib64/vendor.display.color@1.3.so|4eaa4d87daad8914498a976ce8e54f908a1206ae
-vendor/lib64/vendor.display.color@1.4.so|f7d17eadc4a793a737176bee3bd41586c76a6c60
-vendor/lib64/vendor.display.color@1.5.so|ee9b40222b1493f7552245f71780458bec3e2cfc
-vendor/lib64/vendor.display.postproc@1.0.so|8ec8b1c4764eda08ed1154f3487ef0a8f0ad5345
 
 # DRM - from hanoip S2RI32.32-20-7
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|57d280849768bc5d5e9e954b9ac90a5a31c54172
@@ -552,14 +522,9 @@ vendor/lib/libadreno_utils.so|1ab5eba1b8df146055ab896e08f53da1fbf91828
 vendor/lib/libc2d30_bltlib.so|9977576a557bef02de296e742a4eeecc711fad9c
 vendor/lib/libgpudataproducer.so|7c12a4f31253d2099778cd574561b090c9240a4b
 vendor/lib/libgsl.so|91806d6e7973fc8c443b5067b3a0f7a709f2d13b
-vendor/lib/libhdr_tm.so|3c94e41359e6bbd68d97961377d28fb58b76949e
 vendor/lib/libllvm-glnext.so|a7f9195adca1e472af8fc896f8af91687a4c80dd
 vendor/lib/libllvm-qcom.so|2f896317139accdb781c3a1a208525f062862983
 vendor/lib/libpvr.so|82723b3ea51940ae0d07206db949f7c98af7b7da
-vendor/lib/libqseed3.so|97d17f5694a845dcdf7e09cb99aa4a01ffc26ecd
-vendor/lib/libsdm-color.so|cde525ef1f0ed57c9937f9bbfe8b71d8b37e6a75
-vendor/lib/libsdm-diag.so|767f2cf3870e1bfa000f5eaa4601e9d4ef1519f9
-vendor/lib/libtinyxml2_1.so|597d471aad4cd5c0cf73bab8bc04bac5ed95ee92
 vendor/lib64/egl/eglSubDriverAndroid.so|9dac5b2c3d9ad28daf85137faa020546ce9f2905
 vendor/lib64/egl/libEGL_adreno.so|e7a43ed0337890618bb6881460c51def05a1500f
 vendor/lib64/egl/libGLESv1_CM_adreno.so|0a2a648ca2dcd887ea62860bbfa2ef397f01d42d
@@ -575,14 +540,9 @@ vendor/lib64/libadreno_app_profiles.so|1dfc3e93520c771417dcb4210e886fc395169a53
 vendor/lib64/libadreno_utils.so|56b1d1b127eb571a584caf2ba12d5d069e9aed71
 vendor/lib64/libgpudataproducer.so|8d1b97e65e63bb8a0c37af54f38053028d9fcab9
 vendor/lib64/libgsl.so|906445697a01e905f6b94136b1993694396e76db
-vendor/lib64/libhdr_tm.so|a222a7d838735c5ce73f06d4096fea3ca19611c8
 vendor/lib64/libllvm-glnext.so|eaf5143a2aad128e86094cd3b65717efb7381a78
 vendor/lib64/libllvm-qcom.so|512c0db7ea845f992f382e53da4ca4c988dc5837
 vendor/lib64/libpvr.so|0d293cfcac615cfadd41aeeba36a336869e51edc
-vendor/lib64/libqseed3.so|7f2a659fb9acd84d79c11dbd6901b816d5d1214f
-vendor/lib64/libsdm-color.so|d24904d36d2cd5912755af5ac7e2fede47cd3eac
-vendor/lib64/libsdm-diag.so|341907510d377127adb98d07e7d9f30448d08def
-vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Graphics firmware - from hanoip S2RI32.32-20-7
 vendor/firmware/a612_rgmu.bin|cb8705d5bc417e53863ed16ab0bed2fc1489646f
