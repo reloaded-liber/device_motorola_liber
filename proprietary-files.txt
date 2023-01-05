@@ -79,7 +79,6 @@ vendor/lib64/libaudioparsers.so|32d74478058626cd6fff16b72b51bc481fa5e1aa
 vendor/lib/hw/audio.primary.sm6150.so
 vendor/lib/vndk/libtinyalsa.so
 vendor/lib/libmotaudioutils.so
-vendor/lib/libtinycompress_vendor.so
 
 # Audio - Soundfx
 vendor/lib/soundfx/libmmieffectswrapper.so
