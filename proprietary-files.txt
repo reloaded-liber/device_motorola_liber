@@ -569,11 +569,7 @@ vendor/lib64/liblistensoundmodel2.so|81faa97d8013a75ba43408749779d0b679983988
 vendor/lib64/libmulawdec.so|9a21d843c7bd2a516e0f1ce375855b767947b314
 
 # Media from hanoip S2RI32.32-20-7
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
 system_ext/lib/vendor.qti.hardware.vpp@1.1.so
-system_ext/lib64/libmmosal.so
-system_ext/lib64/libmmparser_lite.so
 system_ext/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml

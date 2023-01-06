@@ -210,7 +210,6 @@ PRODUCT_PACKAGES += \
 
 # Dependencies
 PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor \
     libhwbinder.vendor
 
 # Dex
@@ -322,6 +321,7 @@ TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
+    av \
     bt \
     display \
     gps \
