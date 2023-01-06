@@ -325,7 +325,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
-    perf
+    perf \
+    vibrator
 
 # QCOM
 PRODUCT_COPY_FILES += \
@@ -372,10 +373,6 @@ PRODUCT_PACKAGES += \
 # Vendor libstdc++
 PRODUCT_PACKAGES += \
     libstdc++.vendor
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
 
 # Sensors
 PRODUCT_PACKAGES += \
