@@ -69,7 +69,7 @@ PRODUCT_PACKAGES += \
     resize2fs_ramdisk
 
 # Properties
--include $(LOCAL_PATH)/properties.mk
+-include $(LOCAL_PATH)/configs/props/properties.mk
 
 # Permissions
 PRODUCT_COPY_FILES += \

@@ -172,8 +172,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Media
 TARGET_DISABLED_UBWC := true
