@@ -326,7 +326,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     gps \
     perf \
-    vibrator
+    vibrator \
+    wfd
 
 # QCOM
 PRODUCT_COPY_FILES += \
