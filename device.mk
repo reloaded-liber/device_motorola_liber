@@ -205,7 +205,6 @@ PRODUCT_PACKAGES += \
 
 # Dependencies
 PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor \
     libhwbinder.vendor
 
 # DRM
@@ -320,6 +319,7 @@ TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     bt \
     display \
     gps \
