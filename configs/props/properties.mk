@@ -203,15 +203,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.hdr.config=/system/vendor/etc/hdr_tm_config.xml
 
-# IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1  \
-    persist.dbg.wfc_avail_ovr=1
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.qcom.ims.use_moto_vt_ext=true
-
 # Incremental FS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.incremental.enable=1
@@ -271,7 +262,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.vendorprefix=/vendor \
     ro.vendor.radio.imei.sv=11 \
     persist.vendor.data.iwlan.enable=true \
-    persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.manual_nw_rej_ct=1 \
@@ -290,13 +280,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sw_mbn_update=0 \
     persist.vendor.radio.sar_sensor=1 \
     persist.vendor.radio.fi_supported=0 \
-    persist.vendor.radio.rat_on=other \
     persist.vendor.radio.hidl_dev_service=1 \
     persist.vendor.lte.pco_supported=true \
-    persist.vendor.radio.enableadvancedscan=true \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.sib16_support=1 \
-    persist.vendor.radio.procedure_bytes=SKIP \
     persist.vendor.radio.snapshot_timer=22 \
     persist.vendor.radio.snapshot_enabled=1 \
     persist.vendor.radio.aosp_usr_pref_sel=true \
@@ -304,13 +289,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.enable_temp_dds=true
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    DEVICE_PROVISIONED=1 \
     persist.sys.fflag.override.settings_provider_model=false \
-    persist.vendor.data.mode=concurrent \
-    ril.subscription.types=NV,RUIM \
-    ro.telephony.default_network=10,10 \
-    ro.vendor.use_data_netmgrd=true \
-    telephony.lteOnCdmaDevice=1,1
+    persist.vendor.data.mode=concurrent
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
