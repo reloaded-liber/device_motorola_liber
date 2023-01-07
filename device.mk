@@ -38,10 +38,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     FrameworksResCommon_Sys \
-    CarrierConfigResCommon_Sys \
-    SystemUIResCommon_Sys \
-    TelephonyResCommon_Sys \
-    WifiResCommon_Sys \
+    WifiResCommon_Sys
 
 PRODUCT_PACKAGES += \
     FrameworksResLiber \
@@ -319,6 +316,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
+    overlay \
     perf \
     telephony \
     vibrator \
