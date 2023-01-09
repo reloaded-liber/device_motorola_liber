@@ -236,6 +236,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 LOC_HIDL_VERSION := 4.0
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/gps/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Health
 PRODUCT_PACKAGES += \
