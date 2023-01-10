@@ -457,7 +457,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|6a90a3902fa4effa005fd58d7222fde6260d4fe4
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|14819df15693c737fb2a51bf89fe826200286006
 
-# GPS - from surya MIUI V13.0.4.0.SJGEUXM 
+# GPS - from surya MIUI V13.0.4.0.SJGEUXM
 vendor/bin/garden_app|20da3812d668c1a7872ea5bdce631ef8b661244f
 vendor/bin/loc_launcher|be9f321e7c03e038749239ae4accd3db00949e2c
 vendor/bin/lowi-server|0e3561ccf2e7f20f6e5c0861cd989087140b8c68
@@ -737,6 +737,7 @@ vendor/bin/hw/qcrild|2b0e6a298a35bec706b828443023dc1f8095b930
 vendor/bin/ATFWD-daemon|d0bb645ba56056492ab767f6c01ce3928fc3f0b2
 vendor/bin/adpl|8132e82cb5fb32eeb7bd996e4fb53d173b0c7193
 vendor/bin/diag_mdlog|6ac806030c6c87cc8ffdc11ce8415a7c0934c73d
+vendor/bin/embmsslServer|c7164a1aae30ff751d9ed50f6b8f180a769fa20d
 vendor/bin/ipacm-diag|c139829fd0e34848b64caf05a67d4471c46958f9
 vendor/bin/netmgrd|252e90d22f9f0a539ce94340294d3450be6fe81c
 vendor/bin/port-bridge|6f7c0d48b14f736dfaeef2d62703746ce3bc109d
@@ -751,6 +752,7 @@ vendor/etc/data/netmgr_config.xml|a63afcbc5cb75aa63da52b582f8c52c355617123
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/init-qcril-data.rc|890ac72fa49d0e52a263175a7b5b550539287800
+vendor/etc/init/init.embmssl_server.rc|e2f59e5d6223112bdcfbf9e9e69fe6abea3698b1
 vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
 vendor/etc/init/netmgrd.rc|3c8928ce33d92a3fc6e0bf0f433ccb8d1b8403b9
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
@@ -772,6 +774,11 @@ vendor/lib/qtimutex.so|49c1ed28029bba2e6809f0dc0545d9ad0c04e43d
 vendor/lib64/deviceInfoServiceModule.so|e460b52183f4dcfb47904a70dfab987b3704ed57
 vendor/lib64/libconfigdb.so|84aae1a1b7b5f169466e7c7628905446358214a8
 vendor/lib64/libdsi_netctrl.so|cbb4abef5ecce92eafc14d141d40436281654015
+vendor/lib64/libembmsservice.so|636afd31bdfbe0dc0db2c9e763e4b455b7e7d363
+vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|af284f9fee0a956d87b81705af0dd98ff5805836
+vendor/lib64/vendor.qti.hardware.embmssl@1.0.so|3d1ec041f6ecf79a1e732c17d302d9e6dc58456c
+vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so|03631de9b3ad21566203258ceea743554019a19e
+vendor/lib64/vendor.qti.hardware.embmssl@1.1.so|4cfb0e3f1f7880ae5a72dadf78beb416346f97f6
 vendor/lib64/liblog_vendor.so|aa41da4980d222dbdc74e2afa238c3e9e24a675f
 vendor/lib64/liblqe.so|5de2ebfa19f6a4073f63e2bd3176f010af07912e
 vendor/lib64/libmdmcutback.so|8e5ed6b669924c5e95ae87e6b849609f1e16a385
