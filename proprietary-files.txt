@@ -253,6 +253,10 @@ vendor/etc/camera/vidhance_calibration
 vendor/firmware/AbovCapSense.BIN
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera provider
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+
 # CDSP - from hanoip S2RI32.32-20-7
 vendor/bin/cdsprpcd|530bcfcf9a31dedcc6c8ff5ea33fbaf8c03ab877
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
