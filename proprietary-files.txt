@@ -364,30 +364,17 @@ vendor/etc/init/hw/init.mmi.charge_only.rc|6140ab99d46829252b7e17c25f01da135d246
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
 vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
 
-# Display - from hanoip S2RIS32.32-20-7-7
--system_ext/lib/libsdm-disp-apis.qti.so|f47638dc638ed33134259143b2b82640ce528d6e
--system_ext/lib64/libsdm-disp-apis.qti.so|4cb0796ab9e03e0edf06283595ebfa97261fce1d
-vendor/bin/qdcmss|a1bb68e4508feac29c821eb791cae8b1db235e28
-vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
-vendor/lib/libdisplayqos.so|1c01c72ca8e3ce28d3b0fb716e4d7ed21af44875
-vendor/lib/libhdcp1prov.so|218ceb9d2809a670cc6d4284b71fcc7f5a3c5903
-vendor/lib/libhdcp2p2prov.so|75ec44aa9699b74a82c0bd04cb1b791193e67ea8
-vendor/lib/libsdedrm.so|9875a6f816ad9216e0a796ddb2a66f82b7934f9b
-vendor/lib/libsdm-colormgr-algo.so|a9c21dcbe653f06729cc8d6768dcf4ddd4817aa0
--vendor/lib/libsdm-disp-vndapis.so|338b71976191303345a4b7a757dcc2c97b6a9d33
-vendor/lib/libsdmextension.so|2459b61177e966b1e3ed5dcc0da591a40954a01e
-vendor/lib/unnhal-acc-hta.so|e14ae2e4eb144fdd979f1f8d47ec5cfc9834da13
+# Display - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
 vendor/lib64/libdisplayqos.so|5548732c916e629f18f45ce257ce843b679a136a
-vendor/lib64/libhdcp1prov.so|395c39ef92c9145efe908cf7f8ed49c307b7708a
-vendor/lib64/libhdcp2p2prov.so|5d9dfc79157b996708a55268117f1a50d6b71551
-vendor/lib64/libsdedrm.so|f5a761bcb5879aa70d1690597c1d0108e3489986
+vendor/lib64/libhdr_tm.so|a222a7d838735c5ce73f06d4096fea3ca19611c8
+vendor/lib64/libqseed3.so|7f2a659fb9acd84d79c11dbd6901b816d5d1214f
+vendor/lib64/libsdedrm.so|351f4f9a64566097bd19601f18951ac8131a92b5
+vendor/lib64/libsdm-color.so|d24904d36d2cd5912755af5ac7e2fede47cd3eac
 vendor/lib64/libsdm-colormgr-algo.so|15f696a4575868e528360896f1e0098d531899c0
--vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
+vendor/lib64/libsdm-diag.so|341907510d377127adb98d07e7d9f30448d08def
+vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
 vendor/lib64/libsdmextension.so|76ef1430f700480509b5f991e031447fea9ddb01
-vendor/lib64/unnhal-acc-adreno.so|461821fa5e040623a4da8ce9c06345570057b0cc
-vendor/lib64/unnhal-acc-common.so|e37d2113f99506f1de85902a0fdee0b443342942
-vendor/lib64/unnhal-acc-hta.so|6cb1ca10aa1c82e59641d545d9f1ac7f00df8621
-vendor/lib64/unnhal-acc-hvx.so|3f61cfe064965ea1a5fc288b133da1802d36b608
+vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Display (Calibration Data)
 vendor/etc/qdcm_calib_data_mipi_mot_vid_focal_1080p_653.xml
@@ -395,23 +382,6 @@ vendor/etc/qdcm_calib_data_mipi_mot_vid_nova_1080p_653.xml
 
 # Display (HDR)
 vendor/etc/hdr_tm_config.xml
-
-# Display (Postprocessing) - from hanoip S2RIS32.32-20-7-7
-system_ext/lib64/vendor.display.color@1.0.so|f22692f695ecaba49a0d82e56edb6f30c6c6f5a0
-system_ext/lib64/vendor.display.color@1.1.so|079129ae008c6a4d4e9beb0a2515b19fea9c5ad2
-system_ext/lib64/vendor.display.color@1.2.so|4aa6abeb5d21477c0c295a593fc6bb5f845491e8
-system_ext/lib64/vendor.display.color@1.3.so|6fb438b984ae23856d8097419b4de675c0b96cd7
-vendor/bin/hw/vendor.display.color@1.0-service|91e9e25ec4d64c4a7d5261899ca2cdb9cf29b695
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|44993853ff9d4340e856e6f53d802f10372442d3
-vendor/lib64/libmm-hdcpmgr.so|83c232564e9c828b67492207a75ef85866839040
-vendor/lib64/vendor.display.color@1.0.so|f80b69b96c3ff6a1eb865740de95f67c67be785a
-vendor/lib64/vendor.display.color@1.1.so|61e072efa368bf2795d1c8b0e9962471d60905de
-vendor/lib64/vendor.display.color@1.2.so|ca979992335c75885e341e51b939afd856f5b64f
-vendor/lib64/vendor.display.color@1.3.so|4eaa4d87daad8914498a976ce8e54f908a1206ae
-vendor/lib64/vendor.display.color@1.4.so|f7d17eadc4a793a737176bee3bd41586c76a6c60
-vendor/lib64/vendor.display.color@1.5.so|ee9b40222b1493f7552245f71780458bec3e2cfc
-vendor/lib64/vendor.display.postproc@1.0.so|8ec8b1c4764eda08ed1154f3487ef0a8f0ad5345
 
 # DRM - from hanoip S2RIS32.32-20-7-7
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|57d280849768bc5d5e9e954b9ac90a5a31c54172
@@ -497,51 +467,60 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|6a90a3902fa4effa005fd58d7222fde6260d4fe4
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|14819df15693c737fb2a51bf89fe826200286006
 
-# GPS - from hanoip S2RIS32.32-20-7-7
-vendor/bin/garden_app|114a7e3dc8739d667a8a207ff4cba5bdd75e3821
-vendor/bin/loc_launcher|85abf50f8cd227017ea084a9a2175c9f0fb39413
-vendor/bin/lowi-server|6a78b8e8ff3267277a49f78a7ba11498229ed2fb
+# GPS - from surya MIUI V13.0.4.0.SJGEUXM 
+vendor/bin/garden_app|20da3812d668c1a7872ea5bdce631ef8b661244f
+vendor/bin/loc_launcher|be9f321e7c03e038749239ae4accd3db00949e2c
+vendor/bin/lowi-server|0e3561ccf2e7f20f6e5c0861cd989087140b8c68
 vendor/bin/mlid|8c95b94b28d38dcff915b68b1086c932533334c3
-vendor/bin/xtra-daemon|a832090f030ac09937d0e47dc55758b4710f6c6e
-vendor/bin/xtwifi-client|ed0895aaf362cf11e529e1f8c1601f0591c8e7b1
+vendor/bin/slim_daemon|2d9b24b528de8e6a405f9a531be4c23d0591156d
+vendor/bin/xtra-daemon|47ace08d9bed54809f2d1786e05d366512535a16
+vendor/bin/xtwifi-client|765b2b3d530c74720f3aff165b8d8d3e72bda5ed
 vendor/bin/xtwifi-inet-agent|2453d2776049b9ef2b29f6abe1256359f321a088
+vendor/etc/seccomp_policy/gnss@2.0-base.policy|abafcf09068ec6fa62f8fc11ce6a7f51fe4cfb81
+vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy|3f8e3466eaeb966e57c5b79b688a618295eb4b17
+vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy|45b44cf547358961841aeba728851e32dc0a5230
+vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy|9c0419bf0a0b4ef129527a9d4c024a624ff34d6e
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+vendor/etc/apdr.conf|52c9b4265e55c87ddf07c9b60817b3c09420712a
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
+vendor/etc/izat.conf|fb3484beb46dfed4d0a877a3069c33ce629918a0
+vendor/etc/lowi.conf|2045e83483849a124e5fef052b59190f1b784df0
+vendor/etc/sap.conf|8ba193742cde588d201bb43834f247315c0ff73d
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|5bd76bdb98c6ee96c498967f808dd0c79b5f76cd
-vendor/lib64/libasn1cper.so|15236de74b03454838cb69fb5817c04dd9984efa
-vendor/lib64/libasn1crt.so|6780d64f14411f0bb1e7cc4568651bfd7ea3badf
-vendor/lib64/libasn1crtx.so|a356949a94f173356bfec186b2f4f0bc38a1eb04
-vendor/lib64/libcacertclient.so|69ae73b9be13507ff39398ac5813ad709b8b7c32
+vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|9ce956a353ad0a1347463d3c07d51fdb26b0a3d3
+vendor/lib64/libcapiv2svarnn.so|6786511acd1925926d09011ae3e22deb3162d142
 vendor/lib64/libcdfw.so|70ef0247c71d590b503471a03d4aaa76d99441e9
 vendor/lib64/libcdfw_remote_api.so|faaf6c57e4c1c40d5e604d6932704bf63d883e96
-vendor/lib64/libdataitems.so|17d9b3f9dda9de8d72f9e47e67eaa26a36e850cf
-vendor/lib64/libgarden.so|ee503d6315c074d54ca95612818e4ce98bf5661f
-vendor/lib64/libgarden_haltests_e2e.so|2b990e5e426372b0e298a2a476914f399b3834de
+vendor/lib64/libdataitems.so|ac2c6975b584bdf745d09b15aeb3fd3445ab1b71
+vendor/lib64/libgarden.so|17a3e408af853710927847e4fd94b1b355657850
+vendor/lib64/libgarden_haltests_e2e.so|ad77e13af61f2f61afa0aa2f3703b59f4fd61ef5
 vendor/lib64/libgdtap.so|ad5583ba837678f78c84a7ff64a4fae5a3b1097d
-vendor/lib64/libizat_client_api.so|f32ad4073e46dcebeb512caabfcfb1c982463416
+vendor/lib64/libgnsspps.so|0c5104f4d964b0aaaf283fdb27f32461b76922c9
+vendor/lib64/libizat_client_api.so|5e9998cbcf7d220d5b3080ed1ba352d3656e0ecf
 vendor/lib64/libizat_core.so|3b197e431d6b311ec949ba8d2b565aaf45253d26
--vendor/lib64/liblbs_core.so|4d5a91e8dff684189dacc3d9a4f3b41103a53844
--vendor/lib64/libloc_api_v02.so|44e8c5c17f21632954de40ef470f312a0e828dc5
-vendor/lib64/libloc_socket.so|01322395d5477b9733e71a1408a5cb38fa66e9a7
-vendor/lib64/liblocationservice.so|7bce37feb3d8c5787e51071fbe5ee45e1d273a27
-vendor/lib64/liblocationservice_glue.so|bb5164b333266ced6bcbbbc631e8f1fa8d7c502d
+vendor/lib64/liblbs_core.so|7c46ad0a2ce8c4f9ea6bc6d83db5613c358037b2
+vendor/lib64/libloc_api_v02.so|ee34673ffef3d31b07600eb338c10f99ded3c5e5
+vendor/lib64/libloc_api_wds.so|50bd3ca2e73435270b091a3cb5c156afa384ca4f
+vendor/lib64/libloc_socket.so|347eebf332c92d52516e70a89bce3211de0f98df
+vendor/lib64/liblocationservice.so|1cdaa396861cd29f615d8851cc1f3f65c9a6bec9
+vendor/lib64/liblocationservice_glue.so|4b904ec55591e9268d866ca058f13e6215f80bb7
 vendor/lib64/liblowi_client.so|59d98f1cfdec67eb0f7115066aeab43e4304c95c
 vendor/lib64/liblowi_wifihal.so|db59c80dc7f36b4b6498bea7acea2f9be5234f7c
 vendor/lib64/libqcc_file_agent.so|cd70ce305d5036a027060aa989b0dcbcfab8edb6
-vendor/lib64/libslimclient.so|d8f9bde6da42178abd006409cfbfd4bdf4f3df23
+vendor/lib64/libslimclient.so|39c479a4300b7d54674328c9ab7a0b781943562e
+vendor/lib64/libsynergy_loc_api.so|c9be5ddb6ccc259bb351b5e40a53abd4aa1e4ea7
 vendor/lib64/libxtadapter.so|caf0ca0a97e43a20fcd584e12c280a1654fc6b00
 vendor/lib64/libxtwifi_server_protocol.so|ca42a0576b5b890338a1e04cd5d36aef6ebaee27
 vendor/lib64/libxtwifi_server_protocol_uri_v3.so|7fdac704f7c923b09dd3b658e6699c4ef2452cb8
-vendor/lib64/vendor.qti.gnss@1.0.so|7b9184263c7494c91f5811f7de91eef365034cf6
-vendor/lib64/vendor.qti.gnss@1.1.so|4aff58f45ccd00aacce8480d8892a5941bf04a0f
-vendor/lib64/vendor.qti.gnss@1.2.so|7561202e43cddc8419465e6d33a4756111e6ce5c
-vendor/lib64/vendor.qti.gnss@2.0.so|2e425157e11738a9ae0c951f7e17f689f6afaa55
-vendor/lib64/vendor.qti.gnss@2.1.so|148c38d7bb7f604637ff38d25aed75f412ebea3e
-vendor/lib64/vendor.qti.gnss@3.0.so|511a8354bb199b1b4d0d264762bdc078fd9f3e6b
-vendor/lib64/vendor.qti.gnss@4.0-service.so|0b3eb02363eed4ef0ad27f51b7a3889ccd032366
-vendor/lib64/vendor.qti.gnss@4.0.so|7ba7853e772806f98fe60243542498a146dfe248
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so|1633c31212d1ea9338b79ebfc2476f83424f36ee
+vendor/lib64/vendor.qti.gnss@1.0.so|5cc0d0c8e7a8083f5892eb303ab1e6d4c9d66639
+vendor/lib64/vendor.qti.gnss@1.1.so|9a516f4b1b55798f0ec1ebead0c653ad65546517
+vendor/lib64/vendor.qti.gnss@1.2.so|1266128a166aed91804aebc1513524eb09424f64
+vendor/lib64/vendor.qti.gnss@2.0.so|8dc78f86e141c05f5b404cb3236910896c10d941
+vendor/lib64/vendor.qti.gnss@2.1.so|81142c88b15688a671bd372f013dfb2e77d1998d
+vendor/lib64/vendor.qti.gnss@3.0.so|1c0b41eddcc4789e1ea842be02d511afad123a8e
+vendor/lib64/vendor.qti.gnss@4.0-service.so|d20a0fd214eb4f7aa2d4b2c2cd14ea2b120a49f5
+vendor/lib64/vendor.qti.gnss@4.0.so|e38ae43982dc62bf48193a6c3eb2ae385adb37aa
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
 
 # Graphics - from hanoip S2RIS32.32-20-7-7
@@ -767,45 +746,6 @@ vendor/etc/init/motorola.hardware.popup.akm@1.0-service.rc
 vendor/lib/motorola.hardware.popup@1.0.so
 vendor/lib64/libpopup.so
 vendor/lib64/motorola.hardware.popup@1.0.so
-
-# Perf - from hanoip S2RIS32.32-20-7-7
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|f03cd31f03b08e2c07e976399406cc98befd79a7
-vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
-vendor/lib/libperfconfig.so|032d646757153d2da70332843f6ffd0d3c0c1b16
-vendor/lib/libperfgluelayer.so|86f72d9980f7f5458dbe6f18a47c52e3d5a1cd91
-vendor/lib/libperfioctl.so|792c14e64aa6f83832127238f648394da51e27ce
-vendor/lib/libqti-perfd-client.so|c96de06bca2785983c4642764be13ed9810b7a78
-vendor/lib/libqti-perfd.so|b7ea44cdab92ed8d41f5cb1d09a6878a0c97740c
-vendor/lib/libqti-util.so|9a071a7fe1eab09cdef14b3bb44d9e178175ee9f
-vendor/lib/vendor.qti.memory.pasrmanager@1.0.so|c5cb17f183de38d2b1448754090dab6a47b567cd
-vendor/lib/vendor.qti.memory.pasrmanager@1.1.so|8b409d7d9223f38ac9ed507aa9ad68f1f23a88cc
-vendor/lib64/libperfconfig.so|a8a8f8c966e7a92cff1439eeaa103b128eafb5d3
-vendor/lib64/libperfgluelayer.so|00fbc6c9a8f817279dbd3836b1b63aadbed03d15
-vendor/lib64/libperfioctl.so|247ccf6c8e4477d4f464cac7bed05f6e5262c948
-vendor/lib64/libqti-perfd-client.so|cd4503fba00ed1f9bd0594aaeeabad0e9cc69b79
-vendor/lib64/libqti-perfd.so|3d550ac8a6d35b98b4388424feff9132a316bd35
-vendor/lib64/libqti-util.so|559252e14782c0849603decb6462a3e4410b713c
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|7e332989976f3549fcdb6c7b990fef3844dd36ae
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|4254d087742dd950f0f524106e6262d1e15dda60
-
-# Perf (learningmodule) - from hanoip S2RIS32.32-20-7-7
-vendor/etc/lm/AdaptLaunchFeature.xml|d864a3d5add9408b808ca2ae3dc28279d6481d27
-vendor/etc/lm/AppClassifierFeature.xml|80bcbf8fc50ed706e8549432140323dbb9e8ae4c
-vendor/etc/lm/GameOptimizationFeature.xml|5267dbb620e40e3972eaa72a2aa21685b3bc71a2
-vendor/lib64/libadaptlaunch.so|aa1da37d4ac954e273c310250fa634c7e1ae510f
-vendor/lib64/libappclassifier.so|0a3f393ceb33ca37a3ee7c608997807589f88418
-vendor/lib64/libgameoptfeature.so|90f27f9a822b493abbea642b0b062f1a874cd6f1
-vendor/lib64/liblearningmodule.so|3e5e0c1a84149d86e08ba65b88a4d048c2223865
-vendor/lib64/libmeters-ns.so|08ede734456721d2b450cb46f17237d9a9b6cf79
-vendor/lib64/libmeters.so|50f9874933f73be22dc871a29160645780116296
-
-# Perf (io-prefetch) - from hanoip S2RIS32.32-20-7-7
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|98834efcbf84743c3150d06cea9ba2267bad3afe
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib64/libqti-iopd-client.so|50c6699c623f348b8dd0bc11b894f5372cc93a6a
-vendor/lib64/libqti-iopd.so|895fed27eb7304b33dd0f84002e8702ad788407b
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|1c295b7f483244df5d3259b8361aa83242d3d82f
 
 # Peripheral manager - from hanoip S2RIS32.32-20-7-7
 vendor/bin/pm-proxy|0704192692efb4b79e8cb1a2252625ad24468805
@@ -1254,12 +1194,6 @@ vendor/lib64/libadspd.so|16e8e275db7fa33ec256366a4d240ddf211ed1c1
 vendor/lib64/libsensorslog.so|b5da5458778fc2ce4bc31cac77a705f9b650af91
 vendor/lib64/libssc_default_listener.so|d1ca27c768a8746fc92ff5d0ed61699015853d7c
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|9b21b6b1c1c38e9b5c53f44e5cf10fb84bb47acf
-
-# Servicetracker - from hanoip S2RIS32.32-20-7-7
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service|46268253a28d60c28e7a8639accdbc49bc572f5f
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc|7cf06148da895586c20aab7e6bd01b806d8128b6
--vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml|40b6abd9b4be99dc5722eb60d71ee36764bf4ef3
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|1745bf39413e1e867131eadff7417620c6daeb1c
 
 # Snapdragon Computer Vision Engine - from hanoip S2RIS32.32-20-7-7
 vendor/lib/libfastcvdsp_stub.so|7f27cee24281bc9bf4f08c6100cc66bd650d8efb

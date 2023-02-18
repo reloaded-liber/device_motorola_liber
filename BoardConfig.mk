@@ -1,17 +1,7 @@
 #
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2023 Paranoid Android
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# SPDX-License-Identifier: Apache-2.0
 #
 
 BUILD_BROKEN_DUP_RULES := true
@@ -20,6 +10,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BOARD_VENDOR := motorola
 
 DEVICE_PATH := device/motorola/liber
+COMMON_PATH := device/qcom/common
 
 # Architecture
 TARGET_ARCH := arm64
@@ -66,19 +57,13 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := liber-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/liber
+TARGET_KERNEL_SOURCE := kernel/msm-4.14
 
 # llvm
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    LLVM=1 \
-    LLVM_IAS=1
+KERNEL_LLVM_SUPPORT := true
 
 # Platform
-BOARD_USES_QCOM_HARDWARE := true
-QCOM_BOARD_PLATFORMS += sm6150
-TARGET_BOARD_PLATFORM := sm6150
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
-TARGET_USES_QCOM_BSP := true
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -106,7 +91,6 @@ AUDIO_FEATURE_ENABLED_INSTANCE_ID := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 BOARD_USES_ALSA_AUDIO := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
-USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
@@ -125,15 +109,8 @@ ifeq ($(HOST_OS),linux)
 endif
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 
-# Display
-MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
+# Display density
 TARGET_SCREEN_DENSITY := 420
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_GRALLOC4 := true
-TARGET_USES_HWC2 := true
-TARGET_USES_ION := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -143,19 +120,11 @@ TARGET_FS_CONFIG_GEN := \
     $(DEVICE_PATH)/configs/filesystem/config.fs \
     $(DEVICE_PATH)/configs/filesystem/mot_aids.fs
 
-# GPS
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
-GNSS_HIDL_VERSION := 2.1
-LOC_HIDL_VERSION := 4.0
-TARGET_NO_RPC := true
-USE_DEVICE_SPECIFIC_GPS := true
-
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/device_framework_compatibility_matrix.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE :=  \
-    $(DEVICE_PATH)/configs/vintf/manifest.xml \
-    hardware/qcom-caf/sm8150/media/conf_files/msmnile/c2_manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
+
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -174,19 +143,10 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-ifeq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 104857600
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 104857600
-else
-BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 660602880
-BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1258291200
-endif
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 104857600
-BOARD_MOT_DP_GROUP_PARTITION_LIST := product system vendor
-BOARD_MOT_DP_GROUP_SIZE := 4864868352
-BOARD_SUPER_PARTITION_GROUPS := mot_dp_group
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system vendor
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 4864868352
+BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_SUPER_PARTITION_SIZE := 9729736704
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_COPY_OUT_PRODUCT := product
@@ -196,8 +156,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_POWERHAL_BOOST_EXT := $(DEVICE_PATH)/power/boost-ext.cpp
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/mode-ext.cpp
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -208,7 +166,6 @@ TARGET_DISABLED_UBWC := true
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
@@ -221,7 +178,6 @@ VENDOR_SECURITY_PATCH := 2023-01-01
 
 # SELinux
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 

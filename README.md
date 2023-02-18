@@ -1,8 +1,7 @@
-Copyright 2021 - The LineageOS Project
+Copyright (C) 2023 Paranoid Android
 
-# Motorola One Fusion+
-
-## Device specifications
+Device configuration for Motorola One Fusion+
+============================================
 
 Basic   | Spec Sheet
 -------:|:-------------------------
